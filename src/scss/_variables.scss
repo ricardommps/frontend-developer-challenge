@@ -1,0 +1,23 @@
+/* Colors. Não usar em componentes */
+$blue:                                  #0078D7;
+$white:                                 #ffffff;
+
+$gray-100:                              #F9F9F9 !default;
+$gray-200:                              #F2F2F2 !default;
+$gray-300:                              #E7E7E7 !default;
+$gray-400:                              #A6A6A6 !default;
+$gray-500:                              #808080 !default;
+$gray-600:                              #4D4D4D !default;
+$gray-700:                              #333333 !default;
+$black:                                 #000 !default;
+
+/* Variáveis para uso */
+
+$primary-color:                         $blue;
+
+$font-family-fallbacks: Tahoma, Verdana, Arial, sans-serif !default;
+
+@mixin font-regular(){
+    font-family: "Helvetica Neue", "Selawik", $font-family-fallbacks;
+    font-weight: 400;
+  }
