@@ -1,72 +1,68 @@
-# Desafio | Frontend Developer
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> **ATENÇÃO:** Antes de começar, se [cadastre na vaga](https://linxneemuchaordic.recruiterbox.com/) via Recruiterbox **=]**
+## Available Scripts
 
-Olá! Seja bem vindo ao teste para a vaga de **Frontend Developer** para o time de **Customer Operations** da Linx Impulse.
+In the project directory, you can run:
 
-Preparamos um teste que abordará seus conhecimentos em **HTML**, **CSS** e **Javascript**. Você será encaixado na vaga de acordo com seu resultado.
+### `yarn start`
 
----
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Sobre o desafio
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-O desafio consiste no *layout* de uma *landing page* com uma grade de produtos e um formulário de *newsletter*. Seu principal objetivo é transformar este *layout* em uma página funcional.
+### `yarn test`
 
-**Link do layout**: https://xd.adobe.com/spec/aa1c5781-ecac-46c9-7032-b66139998404-dc2d/
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Endpoint da API**: https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1
+### `yarn build`
 
-### Layout
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Você terá que implementar o *layout* de acordo com esse **[mock](https://xd.adobe.com/spec/aa1c5781-ecac-46c9-7032-b66139998404-dc2d/)**. O *mock* contém a estrutura do layout e todo o estilo da página.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-É importante se ater aos detalhes de tamanho e espaçamento entre os elementos da página, construindo o HTML mais semântico possível utilizando-se das tags do HTML5.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Comportamento:
+### `yarn eject`
 
-Para preencher a página com as informações dos produtos, você terá que consultar esta **[API](https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1)** de forma paginada, sendo que cada página consultada retornará as informações de **8 produtos** e um **link para a próxima página**.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Assim que obter os dados, você deverá implementar os seguintes pontos:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- Para cada **produto** retornado pela API, um **card de produto** com as respectivas informações deve ser criado na grade de produtos;
-- Ao clicar no botão **Ainda mais produtos aqui!** a próxima página da API deve ser consultada, gerando mais **8 produtos** na grade existente, abaixo dos produtos já carregados pela primeira requisição;
-- O formulário de *newsletter* com o título **Compartilhe a novidade** deve ter seus campos de *input* validados de acordo com o conteúdo (ex: O campo de email deve conter um email válido);
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
----
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Instruções
+## Learn More
 
-- Faça um **[fork](https://help.github.com/en/articles/fork-a-repo)** deste repositório e crie uma branch com o seu nome (ex: `nome-sobrenome`) que irá conter o código do seu desafio;
-- Faça *commits* ao longo do seu desenvolvimento, isso nos ajudará a entender sua linha de raciocínio ;)
-- Substitua este **README.md** por outro que contenha as informações de *setup* e a descrição do seu projeto;
-- Suba um *live preview* do seu desafio em um dos provedores a seguir, isso nos ajudará a testar sua implementação:
-    - **[Now](https://zeit.co/now)**
-    - **[Heroku](https://www.heroku.com)**
-    - **[Netifly](https://www.netlify.com/)**
-    - Qualquer outro semelhante
-- Assim que concluir o seu desafio, abra um **[pull request](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)** para o [repositório do desafio](https://github.com/iurykrieger/frontend-developer-challenge) com suas alterações e com o link do *live preview* na descrição;
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Dicas
+### Code Splitting
 
-> Crie uma estrutura de arquivos organizada para suas implementações
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-> Construa o CSS de forma bem estruturada e em um arquivo separado.
+### Analyzing the Bundle Size
 
-> Evite poluir o escopo global do Javascript
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-> Documente suas funções e seja o mais conciso possível ao escrever seu código
+### Making a Progressive Web App
 
-> Seu README.md deve conter as instruções necessárias para qualquer pessoa fazer seu projeto funcionar
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-> Your code will be better understood in English ;)
+### Advanced Configuration
 
-## Não conseguiu fazer tudo?
-A sua forma de priorizar a entrega também vai ser considerada. Escreva no README.md o que você conseguiu e não conseguiu implementar, descrevendo porque você preferiu priorizar desta maneira.
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
----
+### Deployment
 
-Em caso de dúvidas, [abra uma issue](https://github.com/chaordic/frontend-intern-challenge/issues).
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-**Boa sorte =]**
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
