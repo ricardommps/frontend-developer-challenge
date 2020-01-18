@@ -1,38 +1,44 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
+import { withI18n } from 'react-i18next';
 import Button from '@material-ui/core/Button';
+import { Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import './Header.scss';
 
-const ColorButton = withStyles(theme => ({
+const ColorButton = withStyles(() => ({
   root: {
-    color: theme.palette.getContrastText('#FFFFFF'),
+    fontSize: 14,
+    color: '#888888',
     backgroundColor: '#FFFFFF',
     '&:hover': { backgroundColor: '#FFFFFF' },
   },
 }))(Button);
 
-const Header = () => (
+const Header = ({ t }) => (
   <div className="header">
     <div className="container container-header">
-      <p>uma seleção de produtos</p>
-      <h1>especial para você</h1>
-      <p className="subTitle">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+      <Typography className="section1">{t('HEADER_SECTION1')}</Typography>
+      <Typography className="section2">{t('HEADER_SECTION2')}</Typography>
+      <Typography variant="h1" className="section3">{t('HEADER_SECTION3')}</Typography>
       <div className="actions">
         <ColorButton variant="contained" className="button">
-                Conheça a Linx
+          {t('HEADER_BUTTON1')}
         </ColorButton>
         <ColorButton variant="contained" className="button">
-                Ajude o algorítimo
+          {t('HEADER_BUTTON2')}
         </ColorButton>
         <ColorButton variant="contained" className="button">
-                Seus produtos
+          {t('HEADER_BUTTON3')}
         </ColorButton>
         <ColorButton variant="contained" className="button">
-                Compartilhe
+          {t('HEADER_BUTTON4')}
         </ColorButton>
       </div>
     </div>
   </div>
 );
 
-export default Header;
+Header.propTypes = { t: PropTypes.func.isRequired };
+
+export default withI18n()(Header);

@@ -16,8 +16,12 @@ $black:                                 #000 !default;
 $primary-color:                         $blue;
 
 $font-family-fallbacks: Tahoma, Verdana, Arial, sans-serif !default;
-
 @mixin font-regular(){
-    font-family: "Helvetica Neue", "Selawik", $font-family-fallbacks;
+    font-family: "Roboto", $font-family-fallbacks;
     font-weight: 400;
-  }
+}
+
+@mixin font-bold(){
+  font-family:  "Roboto", $font-family-fallbacks;
+  font-weight: 700;
+}

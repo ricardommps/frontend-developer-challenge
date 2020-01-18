@@ -1,15 +1,19 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import { Typography } from '@material-ui/core';
+import { withI18n } from 'react-i18next';
 import './Footer.scss';
 
-const Footer = () => (
+const Footer = ({ t }) => (
   <div className="footer">
     <div className="row text-container">
-      <Typography>Testando suas habilidades em HTML, CSS e JS.</Typography>
-      <Typography>Linx Impulse</Typography>
-      <Typography>2019</Typography>
+      <Typography>{t('FOOTER_SECTION1')}</Typography>
+      <Typography>{t('FOOTER_SECTION2')}</Typography>
+      <Typography>{t('FOOTER_SECTION3')}</Typography>
     </div>
   </div>
 );
 
-export default Footer;
+Footer.propTypes = { t: PropTypes.func.isRequired };
+
+export default withI18n()(Footer);
