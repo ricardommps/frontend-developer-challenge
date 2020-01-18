@@ -1,0 +1,45 @@
+.header {
+    background-color: #707070;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.container-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 69px 16px 39px 16px; 
+}
+
+.container-header p {
+    letter-spacing: 0;
+    font-size: 20px;
+    margin: 0; 
+}
+
+.container-header h1 {
+    letter-spacing: 0;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold; 
+}
+
+.container-header .subTitle {
+    letter-spacing: 0;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 24px; 
+}
+
+.container-header .actions {
+    margin-top: 50px; 
+}
+
+.container-header .button {
+    margin-left: 40px;
+}
