@@ -15,7 +15,7 @@ const fetchProductsAjax = (action) => {
   };
 };
 
-export const fetchAtosEpic = (action$, state$, { ajax }) => (
+export const fetchProductsEpic = (action$, state$, { ajax }) => (
   action$.pipe(
     ofType(actions.fetchProductsAction().type),
     mergeMap(action => ajax(fetchProductsAjax(action, state$)).pipe(

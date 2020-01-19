@@ -2,7 +2,6 @@ import * as actions from './Products.actions';
 import { createReducer } from '../../common/redux/createReducer';
 
 export const initialState = {
-  current_page: 0,
   loading: false,
   error: false,
   products: [],
