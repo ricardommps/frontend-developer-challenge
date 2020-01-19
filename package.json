@@ -19,7 +19,9 @@
     "react-i18next": "8.3.8",
     "rxjs": "^6.3.2",
     "formik": "^1.0.3",
-    "yup": "^0.26.2"
+    "yup": "^0.26.2",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1"
   },
   "devDependencies": {
     "enzyme": "^3.9.0",
