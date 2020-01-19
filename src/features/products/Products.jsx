@@ -39,19 +39,32 @@ const Products = ({ t }) => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const { products } = useSelector(state => (state.productsReducer.products));
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const [state, setState] = React.useState({ products: [] });
+  useEffect(() => {
+    dispatch(actions.fetchProductsAction(currentPage));
+  }, []);
 
   useEffect(() => {
-    dispatch(actions.fetchProductsAction(1));
-  }, []);
+    if (products) {
+      const prevState = state.products;
+      setState({ products: prevState.concat(products) });
+    }
+  }, [products]);
+
+  const handleLoadMore = () => {
+    dispatch(actions.fetchProductsAction(currentPage + 1));
+    setCurrentPage(currentPage + 1);
+  };
   return (
     <div style={{ marginTop: 20, padding: 30 }}>
-      {products
+      {state.products
             && (
-            <Grid container spacing={4} justify="center">
+            <Grid container spacing={4} justify="center" alignItems="center">
               <Grid item xs={12}>
-                <p className="product-title">Sua seleção especial</p>
+                <Typography align="center" className="card-title">Sua seleção especial</Typography>
               </Grid>
-              {products.map(product => (
+              {state.products.map(product => (
                 <Grid item xs={6} sm={3} key={product.name}>
                   <Card style={{ boxShadow: 'none', display: 'flex', justifyContent: 'center' }}>
                     <Container className={classes.center}>
@@ -84,6 +97,15 @@ const Products = ({ t }) => {
                   </Card>
                 </Grid>
               ))}
+              <Grid
+                item
+                xs={12}
+                className="card-footer"
+              >
+                <Button variant="outlined" className="buy-more" onClick={() => handleLoadMore()}>
+                  {t('BUTTON_MORE')}
+                </Button>
+              </Grid>
             </Grid>
             )
         }

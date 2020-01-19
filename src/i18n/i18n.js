@@ -26,6 +26,7 @@ i18n
           BY: 'Por:',
           OR: 'ou',
           CURRENCY: 'R$',
+          BUTTON_MORE: 'Ainda mais produtos aqui!',
         },
       },
     },

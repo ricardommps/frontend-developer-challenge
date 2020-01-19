@@ -3,8 +3,6 @@ import { createReducer } from '../../common/redux/createReducer';
 
 export const initialState = {
   current_page: 0,
-  isFirst: true,
-  isLast: true,
   loading: false,
   error: false,
   products: [],
@@ -18,7 +16,6 @@ const fetchProducts = state => ({
 
 const fetchProductsSuccess = (state, action) => ({
   ...state,
-  isFirst: state.current_page === 0,
   products: action.data,
   loading: false,
   error: false,
@@ -29,6 +26,7 @@ const fetchProductsError = state => ({
   loading: false,
   error: true,
 });
+
 
 export const productsReducer = createReducer(initialState, {
   [actions.fetchProductsAction().type]: fetchProducts,

@@ -1,6 +1,7 @@
 .card-title {
-    font-size: 14px !important;
+    font-weight: 700 !important;
     color: #888888;
+    font-size: 18px !important;
 }
 
 .card-description {
@@ -34,3 +35,16 @@
     border: 1px solid #707070 !important;
     color: #888888 !important;
 }
+
+.card-footer {
+    text-align: center;
+}
+
+.buy-more {
+    margin-top:10px !important;
+    padding: 7px 15px !important;
+    border: 1px solid #707070 !important;
+    color: #888888 !important;
+    width: 260px;
+}
+
