@@ -18,7 +18,8 @@
     "redux-observable": "^1.0.0",
     "react-i18next": "8.3.8",
     "rxjs": "^6.3.2",
-    "sass-loader": "^7.1.0"
+    "formik": "^1.0.3",
+    "yup": "^0.26.2"
   },
   "devDependencies": {
     "enzyme": "^3.9.0",

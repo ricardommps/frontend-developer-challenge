@@ -62,7 +62,7 @@ const Products = ({ t }) => {
             && (
             <Grid container spacing={4} justify="center" alignItems="center">
               <Grid item xs={12}>
-                <Typography align="center" className="card-title">Sua seleção especial</Typography>
+                <Typography align="center" className="card-title">{t('PRODUCT_TITLE')}</Typography>
               </Grid>
               {state.products.map(product => (
                 <Grid item xs={6} sm={3} key={product.name}>

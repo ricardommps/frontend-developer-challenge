@@ -1,0 +1,41 @@
+.newsletter {
+    margin-top: 150px;
+    &__title {
+        font-size: 18px !important;
+        color: #888888;
+        font-weight: 700 !important;
+    }
+    &__subtitle {
+        font-size: 14px !important;
+        color: #888888;
+        margin-top: 25px !important;
+    }
+    &__form{
+        margin: 60px;
+    }
+    &__gird-form {
+        padding-right: 50px !important;
+    }
+    &__action {
+       text-align: center;
+       margin: 50px 0 !important;
+    }
+    &__label {
+        font-size: 12px !important;
+        color: #888888;
+    }
+    &__invalid-feedback{
+        margin-bottom: 20px;
+        color: red;
+        padding: 10px 2px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    input {
+        width: 340px;
+        border-radius: 0;
+        height: 30px;
+        background-color: #fff!important;
+        font-size: 14px;
+    }
+}
